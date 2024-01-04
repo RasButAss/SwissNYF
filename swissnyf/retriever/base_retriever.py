@@ -55,11 +55,4 @@ class BaseRetriever:
         """returns the top_k tools for a given query"""
         pass 
 
-# import os
-# os.environ["OPENAI_API_KEY"] = "dbcd08145e354de1ba620bff416de2c4"
-# os.environ["OPENAI_API_BASE"] = "https://msri-openai-ifaq.azure-api.net"
-# os.environ["OPENAI_API_TYPE"] = "azure"
-# os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
-# llm2 = AzureOpenAI(deployment_id="gpt-35-turbo", model="gpt-35-turbo", engine="gpt-35-turbo", temperature=0.01 )
 
-# obj = BaseRetriever(llm = llm2)

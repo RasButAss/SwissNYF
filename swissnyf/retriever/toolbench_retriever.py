@@ -57,14 +57,6 @@ class ToolBenchRet(BaseRetriever):
             
         return [api_name for api_name in top_results.keys()]
 
-# if __name__ == "__main__":
-#     import os
-#     from helper import *
-    
-#     obj = ToolBenchRet()
-#     obj.set_tool_def(all_tools)
-#     print(obj.filter("What is the highest grossing movie of all time?"))
-#     obj.add_tool_def([tool1])
-#     print(obj.filter("What is the highest grossing movie of all time?"))
+
     
     

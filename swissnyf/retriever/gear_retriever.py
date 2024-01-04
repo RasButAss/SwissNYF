@@ -509,22 +509,4 @@ class GearRet(BaseRetriever):
         super().add_tool_def(new_tool_def)
         self.create_base_api()
 
-# if __name__ == "__main__":
-#     import os
-#     import time
-#     os.environ["OPENAI_API_KEY"] = "36280dcf174a4410bac4b6784367bc23"
-#     os.environ["OPENAI_API_BASE"] = "https://msrenergy-openai.openai.azure.com"
-#     os.environ["OPENAI_API_TYPE"] = "azure"
-#     os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
-#     llm = AzureOpenAI(
-#         deployment_id="gpt-4", model="gpt-4", engine="gpt-4", temperature=0.01)
-#     embed_model = OpenAIEmbedding(
-#         model="text-embedding-ada-002",
-#         deployment_name="text-embedding-ada-002",
-#     )
 
-#     from helper import *
-#     ret = GearRet(model_name='hvjgv')
-#     ret.set_tool_def(all_tools)
-#     ret.add_tool_def([tool1])
-#     print(ret.filter("blah blah blah"))

@@ -68,15 +68,7 @@ class InstructRet(BaseRetriever):
         filtered_tools = self.semantic_similarity_score(query, self.top_k)
         return [tools[0] for tools in filtered_tools]
 
-# if __name__ == "__main__":
-#     import os
-#     from helper import *
-    
-#     obj = InstructRet()
-#     obj.set_tool_def(all_tools)
-#     print(obj.filter("What is the highest grossing movie of all time?"))
-#     obj.add_tool_def([tool2])
-#     print(obj.filter("What is the highest grossing movie of all time?"))
+
     
 
 
